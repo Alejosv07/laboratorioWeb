@@ -1,10 +1,10 @@
 ﻿@model WebApplication2.Models.Juego
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalles de juego";
 }
 
-<h2>Details</h2>
+<h2>Detalles de juego</h2>
 
 <div>
     <h4>Juego</h4>
@@ -15,7 +15,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.categoria.Nombrecategoria)
+            @Html.ActionLink(Model.categoria.Nombrecategoria, "Details", "Categorias", new { id = Model.categoria.idcategoria }, null)
         </dd>
 
         <dt>
@@ -53,6 +53,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.idjuego }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idjuego }) |
+    @Html.ActionLink("Inicio", "Index")
 </p>

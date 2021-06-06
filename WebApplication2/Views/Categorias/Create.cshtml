@@ -1,10 +1,10 @@
 ﻿@model WebApplication2.Models.Categoria
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Registro categoria";
 }
 
-<h2>Nueva Categoria</h2>
+<h2>Registro categoria</h2>
 
 
 @using (Html.BeginForm("Create", "Categorias", FormMethod.Post, new { enctype = "multipart/form-data" }))
@@ -39,7 +39,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Regresar", "Index")
 </div>
 
 @section Scripts {

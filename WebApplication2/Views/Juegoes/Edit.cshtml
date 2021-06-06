@@ -1,10 +1,10 @@
 ﻿@model WebApplication2.Models.Juego
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Editar juego";
 }
 
-<h2>Edit</h2>
+<h2>Editar juego</h2>
 
 
 @using (Html.BeginForm("Edit", "Juegoes", FormMethod.Post, new { enctype = "multipart/form-data" }))
@@ -53,7 +53,6 @@
         <label class="control-label col-md-2">Imagen actual</label>
         <div class="col-md-10">
             <img src="@Url.Content(Model.imagen)" style="width:50px; height:50px" />
-
         </div>
     </div>
 
@@ -73,7 +72,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Inicio", "Index")
 </div>
 
 @section Scripts {

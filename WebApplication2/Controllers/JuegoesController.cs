@@ -17,9 +17,14 @@ namespace WebApplication2.Controllers
         private WebApplication2Context12 db = new WebApplication2Context12();
 
         // GET: Juegoes
-        public ActionResult Index()
+        public ActionResult Index(int? orderTable)
         {
+            //Si el metodo recibe 1 quiere decir que tenemos que ordenar la tabla de percio mayor a menor
             var juegoes = db.Juegoes.Include(j => j.categoria);
+            if (orderTable == 1)
+            {
+                juegoes = db.Juegoes.Include(j => j.categoria).OrderByDescending(j => j.precio);
+            }
             return View(juegoes.ToList());
         }
 
@@ -31,6 +36,7 @@ namespace WebApplication2.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Juego juego = db.Juegoes.Find(id);
+            juego.categoria = db.Categorias.Find(juego.idcategoria);
             if (juego == null)
             {
                 return HttpNotFound();

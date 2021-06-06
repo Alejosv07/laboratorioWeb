@@ -22,3 +22,44 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.btnOrden {
+    background-color: #007BFF;
+    width: 150px;
+    height: 150px;
+}
+
+.indexButton {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: left;
+}
+
+/*#videoBG {
+    position: fixed;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('../Assets/poster.jpeg');
+        background-size: cover;
+    }
+*/}
