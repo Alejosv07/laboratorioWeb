@@ -1,0 +1,57 @@
+﻿@model IEnumerable<WebApplication2.Models.Juego>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-hover table-responsive">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.categoria.Nombrecategoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nomJuego)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.existencias)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.imagen)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.categoria.Nombrecategoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomJuego)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.existencias)
+        </td>
+        <td>
+            <img src="@item.imagen" style="width:50px; height:50px" />
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idjuego }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idjuego }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idjuego })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,58 @@
+﻿@model WebApplication2.Models.Juego
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Juego</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.categoria.Nombrecategoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoria.Nombrecategoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomJuego)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomJuego)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.existencias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.existencias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imagen)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.imagen)" style="width:50px; height:50px" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idjuego }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

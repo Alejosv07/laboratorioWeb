@@ -50,16 +50,14 @@ namespace WebApplication2.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "idcategoria,Nombrecategoria,ImageFile")] Categoria categoria)
         {
-            string fileName = Path.GetFileNameWithoutExtension(categoria.ImageFile.FileName);
-            string extension = Path.GetExtension(categoria.ImageFile.FileName);
-            fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-            categoria.imagenCat = "/Image/" + fileName;
-            fileName = Path.Combine(Server.MapPath("~/Image/"), fileName);
-            categoria.ImageFile.SaveAs(fileName);
-            System.Diagnostics.Debug.WriteLine("Imagen : " + fileName);
-            System.Diagnostics.Debug.WriteLine("HOLAAAAAAAAAAAAAA");
             if (ModelState.IsValid)
             {
+                string fileName = Path.GetFileNameWithoutExtension(categoria.ImageFile.FileName);
+                string extension = Path.GetExtension(categoria.ImageFile.FileName);
+                fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                categoria.imagenCat = "/Image/" + fileName;
+                fileName = Path.Combine(Server.MapPath("~/Image/"), fileName);
+                categoria.ImageFile.SaveAs(fileName);
                 db.Categorias.Add(categoria);
                 db.SaveChanges();
                 return RedirectToAction("Index");

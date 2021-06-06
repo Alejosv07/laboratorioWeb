@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -31,9 +32,9 @@ namespace WebApplication2.Models
         public int existencias { set; get; }
 
         [Display(Name = "Imagen")]
-        [StringLength(50, ErrorMessage = "Campo {0} solo admite una ruta con caracteres entre {1} y {2}", MinimumLength = 3)]
-        [Required(ErrorMessage = "Campo {0} es requerido")]
         public string imagen { set; get; }
+        [NotMapped]
+        public HttpPostedFileBase ImageFile { get; set; }
 
         //Relacion entre la tabla Categoria y juego
         public Categoria categoria { set; get; }

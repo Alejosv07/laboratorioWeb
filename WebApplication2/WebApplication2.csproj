@@ -128,6 +128,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JuegoesController.cs" />
     <Compile Include="Data\WebApplication2Context12.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -177,6 +178,11 @@
     <Content Include="Views\Categorias\Details.cshtml" />
     <Content Include="Views\Categorias\Edit.cshtml" />
     <Content Include="Views\Categorias\Index.cshtml" />
+    <Content Include="Views\Juegoes\Create.cshtml" />
+    <Content Include="Views\Juegoes\Delete.cshtml" />
+    <Content Include="Views\Juegoes\Details.cshtml" />
+    <Content Include="Views\Juegoes\Edit.cshtml" />
+    <Content Include="Views\Juegoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
