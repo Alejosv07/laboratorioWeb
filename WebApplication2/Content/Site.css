@@ -23,10 +23,25 @@ textarea {
     max-width: 280px;
 }
 
-.btnOrden {
-    background-color: #007BFF;
-    width: 150px;
-    height: 150px;
+.btnActive {
+    background-color: white;
+    width: 180px;
+    height: 170px;
+    padding: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #007BFF;
+}
+
+.btnActive:hover {
+        background-color: #007BFF;
+        width: 180px;
+        height: 170px;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
 }
 
 .indexButton {

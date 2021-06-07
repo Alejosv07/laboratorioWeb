@@ -10,7 +10,7 @@
     @Html.ActionLink("Registar juego", "Create")
 </p>
 <p>
-    @Html.ActionLink("Juego más caro al más barato", "Index", new { orderTable = 1 }, new { @class = "btnOrden" })
+    @Html.ActionLink("Juego más caro al más barato", "Index", new { orderTable = 1 }, new { @class = "btnActive" })
 </p>
     <table class="table table-hover table-responsive">
         <tr>
@@ -48,7 +48,7 @@
                     @Html.DisplayFor(modelItem => item.existencias)
                 </td>
                 <td>
-                    <img src="@item.imagen" style="width:50px; height:50px" />
+                    <img src="@item.imagen" style="width:80px; height:50px" />
                 </td>
                 <td>
                     @Html.ActionLink("Editar", "Edit", new { id = item.idjuego }) |
