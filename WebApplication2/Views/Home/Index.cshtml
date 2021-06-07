@@ -2,10 +2,127 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="container">
-    <div class="row text-center">
-        <div class="col">
-            <button type="button" class="btn btn-success">Lista de juegos disponible</button>
+<link rel="stylesheet" type="text/css" href="C:\Users\rober\Source\Repos\laboratorioWeb\WebApplication2\Content\index.css">
+
+<div class="row">
+    <h2>Conoce cómo se clasifican los videojuegos</h2>
+    <br />
+    <p>
+        Comúnmente se diferencian por países, procurando tener una clasificación que tenga en cuenta
+        las necesidades e idiosincrasia de su gente. Normalmente ésta clasificación puede verse en
+        la carátula del videojuego. Uno de los sistemas más populares es el norteamericano, llamado
+        Entertainment Software Rating Board (ESRB). Dentro de este sistema se pueden distinguir las
+        siguientes clasificaciones:
+    </p>
+    <br />
+    <ul>
+        <li>
+            E – Everyone – todos. Su contenido está dirigido para todo público.
+            Los juegos contienen un poco de animación, violencia fantástica, así como
+            el uso de insultos suaves.
+        </li>
+        <li>
+            E 10+ - Everyone 10 and up – Todos, mayores de 10 años. Estos juegos
+            contienen animaciones, fantasía, violencia e insultos leves.
+        </li>
+        <li>T – Teen – adolescentes. Su contenido está dirigido a jóvenes de 13 años en adelante, 
+        y se caracteriza por tener violencia, sugerencias sexuales, humor crudo, sangre, juegos de 
+        azar y uso de un lenguaje fuerte.</li>
+        <li>M – Mature 17+ - Edad madura. Estos videojuegos están restringidos para los menores 
+        de 17 años, ya que su contenido se caracteriza por mostrar explícitamente violencia, 
+        sangre, insultos y temas sexuales.</li>
+        <li>AO – Adults only 18+ - Solo para adultos. Estos videojuegos son sólo para mayores de 18 
+        años, su contenido tiene escenas prologadas de violencia, desnudez y temas sexuales.</li>
+    </ul>
+</div>
+<div class="container-fluid" style=" 
+    background-image: url('https://images.hdqwalls.com/wallpapers/playstation-background-image-yu.jpg');
+    height: 50vh; width: 1672px; transform: translateX(-20%);">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <div class="flip-card" style="margin-left: 50px; margin-right: 50px; margin-top: 50px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/ESRB_Everyone.svg/1200px-ESRB_Everyone.svg.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 style=" padding-top: 30px;">Todos</h1>
+                        <p style="text-align:center; padding: 10px; padding-left: 50px; padding-right: 50px">
+                            El contenido por lo general es apto para todas las edades.
+                            Puede que contenga una cantidad minima de violencia caricatura, de fantasia o ligera,
+                            o uso poco frecuente de lenguaje moderado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="flip-card" style="margin-left: 50px; margin-right: 50px; margin-top: 50px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/ESRB_Everyone_10%2B.svg/1200px-ESRB_Everyone_10%2B.svg.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 style=" padding-top: 30px;">Todos +10</h1>
+                        <p style="text-align:center; padding: 10px; padding-left: 50px; padding-right: 50px">
+                            El contenido por lo general es apto para personas de 10 años o mas.
+                            Puede que contenga mas violencia de caricatura, de fantasia o ligera, lenguaje
+                            moderado o temas minimamente provocativos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="flip-card" style="margin-left: 50px; margin-right: 50px; margin-top: 50px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/ESRB_Teen.svg/1200px-ESRB_Teen.svg.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 style=" padding-top: 30px;">Adolescentes</h1>
+                        <p style="text-align:center; padding: 10px; padding-left: 50px; padding-right: 50px">
+                            El contenido por lo general es apto para personas de 13 años o mas.
+                            Puede que contenga violencia, temas insinuantes, humor grotesco, minima cantidad de sangre,
+                            apuestas simuladas o uso poco frecuente de lenguaje fuerte.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="flip-card" style="margin-left: 50px; margin-right: 50px; margin-top: 50px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/ESRB_Mature_17%2B.svg/1200px-ESRB_Mature_17%2B.svg.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 style=" padding-top: 30px;">Maduro +17</h1>
+                        <p style="text-align:center; padding: 10px; padding-left: 50px; padding-right: 50px">
+                            El contenido por lo general es apto para personas de 17 años o mas.
+                            Puede que contenga violencia intensa, derramamiento de sangre, contenido sezual
+                            o lenguaje fuerte.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="flip-card" style="margin-left: 50px; margin-right: 50px; margin-top: 50px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/ESRB_2013_Adults_Only.svg/1200px-ESRB_2013_Adults_Only.svg.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 style=" padding-top: 30px;">Adultos Unicamente +18</h1>
+                        <p style="text-align:center; padding: 10px; padding-left: 50px; padding-right: 50px">
+                            El contenido por lo general es apto para personas de 18 años o mas.
+                            Puede que incluya escenas prolongadas de violencia extensa, contenido sexual 
+                            grafico o apuestas con moneda real.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
